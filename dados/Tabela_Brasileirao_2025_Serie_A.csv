@@ -1,0 +1,191 @@
+Num_Jogo;Num_Rodada;Mandante;Visitante
+1;1;Flamengo;Internacional 
+2;1;Vasco;Santos 
+3;1;Palmeiras;Botafogo 
+4;1;São Paulo;Sport 
+5;1;Red Bull Bragantino;Ceará 
+6;1;Cruzeiro;Mirassol 
+7;1;Grêmio;Atlético-MG 
+8;1;Bahia;Corinthians 
+9;1;Fortaleza;Fluminense 
+10;1;Juventude;Vitória 
+11;2;Fluminense;Red Bull Bragantino 
+12;2;Botafogo;Juventude 
+13;2;Corinthians;Vasco 
+14;2;Santos;Bahia 
+15;2;Mirassol;Fortaleza 
+16;2;Atlético-MG;São Paulo 
+17;2;Internacional;Cruzeiro 
+18;2;Vitória;Flamengo 
+19;2;Ceará;Grêmio 
+20;2;Sport;Palmeiras 
+21;3;Fluminense;Santos 
+22;3;Vasco;Sport 
+23;3;Palmeiras;Corinthians 
+24;3;São Paulo;Cruzeiro 
+25;3;Red Bull Bragantino;Botafogo 
+26;3;Atlético-MG;Vitória 
+27;3;Grêmio;Flamengo 
+28;3;Bahia;Mirassol 
+29;3;Fortaleza;Internacional 
+30;3;Juventude;Ceará 
+31;4;Flamengo;Juventude 
+32;4;Botafogo;São Paulo 
+33;4;Corinthians;Fluminense 
+34;4;Santos;Atlético-MG 
+35;4;Mirassol;Grêmio 
+36;4;Cruzeiro;Bahia 
+37;4;Internacional;Palmeiras 
+38;4;Vitória;Fortaleza 
+39;4;Ceará;Vasco 
+40;4;Sport;Red Bull Bragantino 
+41;5;Fluminense;Vitória 
+42;5;Vasco;Flamengo 
+43;5;Corinthians;Sport 
+44;5;São Paulo;Santos 
+45;5;Red Bull Bragantino;Cruzeiro 
+46;5;Atlético-MG;Botafogo 
+47;5;Grêmio;Internacional 
+48;5;Bahia;Ceará 
+49;5;Fortaleza;Palmeiras 
+50;5;Juventude;Mirassol 
+51;6;Flamengo;Corinthians 
+52;6;Botafogo;Fluminense 
+53;6;Palmeiras;Bahia 
+54;6;Santos;Red Bull Bragantino 
+55;6;Mirassol;Atlético-MG 
+56;6;Cruzeiro;Vasco 
+57;6;Internacional;Juventude 
+58;6;Vitória;Grêmio 
+59;6;Ceará;São Paulo 
+60;6;Sport;Fortaleza 
+61;7;Fluminense;Sport 
+62;7;Vasco;Palmeiras 
+63;7;Corinthians;Internacional 
+64;7;São Paulo;Fortaleza 
+65;7;Red Bull Bragantino;Mirassol 
+66;7;Cruzeiro;Flamengo 
+67;7;Grêmio;Santos 
+68;7;Bahia;Botafogo 
+69;7;Ceará;Vitória 
+70;7;Juventude;Atlético-MG 
+71;8;Flamengo;Bahia 
+72;8;Botafogo;Internacional 
+73;8;Palmeiras;São Paulo 
+74;8;Santos;Ceará 
+75;8;Mirassol;Corinthians 
+76;8;Atlético-MG;Fluminense 
+77;8;Grêmio;Red Bull Bragantino 
+78;8;Vitória;Vasco 
+79;8;Fortaleza;Juventude 
+80;8;Sport;Cruzeiro 
+81;9;Flamengo;Botafogo 
+82;9;Vasco;Fortaleza 
+83;9;Corinthians;Santos 
+84;9;São Paulo;Grêmio 
+85;9;Red Bull Bragantino;Palmeiras 
+86;9;Cruzeiro;Atlético-MG 
+87;9;Internacional;Mirassol 
+88;9;Bahia;Vitória 
+89;9;Ceará;Sport 
+90;9;Juventude;Fluminense 
+91;10;Fluminense;Vasco 
+92;10;Botafogo;Ceará 
+93;10;Palmeiras;Flamengo 
+94;10;São Paulo;Mirassol 
+95;10;Red Bull Bragantino;Juventude 
+96;10;Atlético-MG;Corinthians 
+97;10;Grêmio;Bahia 
+98;10;Vitória;Santos 
+99;10;Fortaleza;Cruzeiro 
+100;10;Sport;Internacional 
+101;11;Flamengo;Fortaleza 
+102;11;Vasco;Red Bull Bragantino 
+103;11;Corinthians;Vitória 
+104;11;Santos;Botafogo 
+105;11;Mirassol;Sport 
+106;11;Cruzeiro;Palmeiras 
+107;11;Internacional;Fluminense 
+108;11;Bahia;São Paulo 
+109;11;Ceará;Atlético-MG 
+110;11;Juventude;Grêmio 
+111;12;Fluminense;Ceará 
+112;12;Botafogo;Mirassol 
+113;12;Palmeiras;Juventude 
+114;12;São Paulo;Vasco 
+115;12;Red Bull Bragantino;Bahia 
+116;12;Atlético-MG;Internacional 
+117;12;Grêmio;Corinthians 
+118;12;Vitória;Cruzeiro 
+119;12;Fortaleza;Santos 
+120;12;Sport;Flamengo 
+121;13;Flamengo;São Paulo 
+122;13;Vasco;Botafogo 
+123;13;Corinthians;Red Bull Bragantino 
+124;13;Santos;Palmeiras 
+125;13;Mirassol;Fluminense 
+126;13;Cruzeiro;Grêmio 
+127;13;Internacional;Vitória 
+128;13;Bahia;Atlético-MG 
+129;13;Fortaleza;Ceará 
+130;13;Juventude;Sport 
+131;14;Fluminense;Cruzeiro 
+132;14;Botafogo;Vitória 
+133;14;Palmeiras;Mirassol 
+134;14;Santos;Flamengo 
+135;14;Red Bull Bragantino;São Paulo 
+136;14;Atlético-MG;Sport 
+137;14;Grêmio;Fortaleza 
+138;14;Bahia;Internacional 
+139;14;Ceará;Corinthians 
+140;14;Juventude;Vasco 
+141;15;Flamengo;Fluminense 
+142;15;Vasco;Grêmio 
+143;15;Palmeiras;Atlético-MG 
+144;15;São Paulo;Corinthians 
+145;15;Mirassol;Santos 
+146;15;Cruzeiro;Juventude 
+147;15;Internacional;Ceará 
+148;15;Vitória;Red Bull Bragantino 
+149;15;Fortaleza;Bahia 
+150;15;Sport;Botafogo 
+151;16;Fluminense;Palmeiras 
+152;16;Vasco;Bahia 
+153;16;Corinthians;Cruzeiro 
+154;16;Santos;Internacional 
+155;16;Red Bull Bragantino;Flamengo 
+156;16;Atlético-MG;Fortaleza 
+157;16;Grêmio;Botafogo 
+158;16;Vitória;Sport 
+159;16;Ceará;Mirassol 
+160;16;Juventude;São Paulo 
+161;17;Flamengo;Atlético-MG 
+162;17;Botafogo;Corinthians 
+163;17;Palmeiras;Grêmio 
+164;17;São Paulo;Fluminense 
+165;17;Mirassol;Vitória 
+166;17;Cruzeiro;Ceará 
+167;17;Internacional;Vasco 
+168;17;Bahia;Juventude 
+169;17;Fortaleza;Red Bull Bragantino 
+170;17;Sport;Santos 
+171;18;Fluminense;Grêmio 
+172;18;Botafogo;Cruzeiro 
+173;18;Corinthians;Fortaleza 
+174;18;Santos;Juventude 
+175;18;Mirassol;Vasco 
+176;18;Atlético-MG;Red Bull Bragantino 
+177;18;Internacional;São Paulo 
+178;18;Vitória;Palmeiras 
+179;18;Ceará;Flamengo 
+180;18;Sport;Bahia 
+181;19;Flamengo;Mirassol 
+182;19;Vasco;Atlético-MG 
+183;19;Palmeiras;Ceará 
+184;19;São Paulo;Vitória 
+185;19;Red Bull Bragantino;Internacional 
+186;19;Cruzeiro;Santos 
+187;19;Grêmio;Sport 
+188;19;Bahia;Fluminense 
+189;19;Fortaleza;Botafogo 
+190;19;Juventude;Corinthians 
