@@ -6,17 +6,14 @@ import random
 import itertools
 from genetic_algorithm import mutate, order_crossover,  calculate_fitness, sort_population
 from utils_tco import *
-from draw_functions import draw_paths, draw_plot, draw_cities
+from draw_functions import draw_plot, draw_team_games
 import sys
 import numpy as np
-import pygame
 
 # Define constant values
 # pygame
-WIDTH, HEIGHT = 800, 400
-NODE_RADIUS = 10
+WIDTH, HEIGHT = 800, 450
 FPS = 30
-PLOT_X_OFFSET = 450
 
 # Define colors
 WHITE = (255, 255, 255)
@@ -52,7 +49,7 @@ possible_games = generate_possible_games(teams)
 
 # GA
 N_TEAMS = len(teams)
-POPULATION_SIZE = N_TEAMS * 10
+POPULATION_SIZE = N_TEAMS * 20
 N_GENERATIONS = None
 MUTATION_PROBABILITY = 0.5
 MUTATION_ITENSITY = 0.1
@@ -100,10 +97,8 @@ while running:
 
     draw_plot(screen, list(range(len(best_fitness_values))),
               best_fitness_values, y_label="Fitness - Sum of Penalties (points)")
-
-    # draw_cities(screen, cities_locations, RED, NODE_RADIUS)
-    # draw_paths(screen, best_solution, BLUE, width=3)
-    # draw_paths(screen, population[1], rgb_color=(128, 128, 128), width=1)
+    
+    draw_team_games(screen, best_solution, teams, BLACK, BLUE)
 
     print(f"Generation {generation}: Best fitness = {round(best_fitness, 2)}")
 
@@ -131,12 +126,13 @@ while running:
     pygame.display.flip()
     clock.tick(FPS)
 
-
+'''
 # save the best individual in a file if it is better than the one saved.
 tco_file = "dados/Tabela_Brasileirao_2025_Serie_A_Otimizada.csv"
 sep = ";"
 encoding = "ISO-8859-1"
-generate_tco_file(best_solution, tco_file, sep, encoding, teams)
+generate_tco_file(best_solution, tco_file, sep, encoding, teams)'
+'''
 
 print_list_games_by_round(best_solution, teams)
 

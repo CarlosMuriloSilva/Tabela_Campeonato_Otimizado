@@ -630,9 +630,3 @@ def print_list_games_by_round(season: list, teams:list):
 
         for n_game, game in enumerate(games):
             print(f"{n_game+1} - {game}")
-            '''
-            if game.find("Bahia") != -1:
-                parts = game.split(" x ")
-                parts.remove("Bahia")
-                print(parts[0])
-            '''
