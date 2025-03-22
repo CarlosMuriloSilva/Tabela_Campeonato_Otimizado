@@ -63,15 +63,18 @@ def calculate_fitness(season: list, teams: list, matrix_distances: list, city_n_
 
 def order_crossover(parent1: List[str], parent2: List[str], possible_games: List[str]) -> List[str]:
     """
-    Perform order crossover (OX) between two parent sequences to create a child sequence.
+    Combinar partes de duas boas tabelas para gerar uma nova tabela que mantenha boas características de ambas
+    No cruzamento destes 2 indivíduos precisa-se manter as regras básicas atendidas, portanto o novo individuo
+    será criado de forma que o mando de campo de metade dos jogos seja mantido de acordo com o primeiro indivíduo,
+    e a outra metade de acordo com o segundo indivíduo
 
-    Parameters:
-    - parent1 (List[str]): The first parent sequence.
-    - parent2 (List[str]): The second parent sequence.
-    - possible_games (List[str]): The list of possible games.
+    Parâmetros:
+        parent1 (List[str]): Sequência de jogos da Tabela Nº 1
+        parent2 (List[str]): Sequência de jogos da Tabela Nº 2
+        possible_games (List[str]): Lista com o código de todos os possíveis jogos
 
-    Returns:
-    List[str]: The child sequence resulting from the order crossover.
+    Retorna
+        List[str]: A sequêcia de jogos da Tabela filha resultado do cruzamento
     """
     
     parent1_seq_games = "" 
@@ -126,15 +129,20 @@ def order_crossover(parent1: List[str], parent2: List[str], possible_games: List
 
 def mutate(solution:  List[str], mutation_probability: float, mutation_intensity: float, teams: List[dict]) ->  List[str]:
     """
-    Mutate a solution by inverting a segment of the sequence with a given mutation probability.
+    Verifica inicialmente se haverá ou não mutação de acordo com a probabilidade informada
+    Realiza a troca de posição entre 2 rodadas na tabela (individuo), as rodadas a serem trocadas são selecionadas de forma aleatória
+    De acordo com o parâmetro de intensidade da mutação se determina o nº de times a terem os seus jogos otimizados em relação ao mando de campo
+        - seleciona os times de forma aleatória
+        - ajusta a sequência de jogos deste time, de forma que ele seja o Mandante numa rodada e Visitante na outra
 
-    Parameters:
-    - solution (List[str]): The solution sequence to be mutated.
-    - mutation_probability (float): The probability of mutation for each individual in the solution.
-    - mutation_intensity (float): The intensity of the mutation for each individual in the solution.
+    Parâmetros
+        solution (List[str]): O individuo (sequência de jogos) que sofrerá a mutação
+        mutation_probability (float): A probabilidade de mutação 
+        mutation_intensity (float): A intensidade desta mutação
+        teams (list): Lista de Dicionários de Equipes        
 
-    Returns:
-    List[str]: The mutated solution sequence.
+    Retorna
+        List[str]: A sequêcia de jogos da Tabela resultado da mutação
     """
     mutated_solution = solution.copy()
     n_changes = 0
@@ -210,22 +218,23 @@ def mutate(solution:  List[str], mutation_probability: float, mutation_intensity
 
 def sort_population(population: List[List[str]], fitness: List[float]) -> Tuple[List[List[str]], List[float]]:
     """
-    Sort a population based on fitness values.
+    Ordena a população baseada nos valores de aptidão
 
-    Parameters:
-    - population (List[List[str]]): The population of solutions, where each solution is represented as a list.
-    - fitness (List[float]): The corresponding fitness values for each solution in the population.
+    Parâmetros:
+        population (List[List[str]]): A população de soluções, aonde cada solução é uma sequência de jogos 
+        fitness (List[float]): Os valores correspondentes de cada solução na população
 
-    Returns:
-    Tuple[List[List[str]], List[float]]: A tuple containing the sorted population and corresponding sorted fitness values.
+    Retorna:
+        Tuple[List[List[str]], List[float]]: Tupla contendo a população ordenada e os valores correspondentes de aptidão
     """
-    # Combine lists into pairs
+
+    # Combina as listas em pares
     combined_lists = list(zip(population, fitness))
 
-    # Sort based on the values of the fitness list
+    # Ordena a lista de acordo com os valores de aptidão
     sorted_combined_lists = sorted(combined_lists, key=lambda x: x[1])
 
-    # Separate the sorted pairs back into individual lists
+    # Separa os pares ordenados novamente em listas individuais
     sorted_population, sorted_fitness = zip(*sorted_combined_lists)
 
     return sorted_population, sorted_fitness

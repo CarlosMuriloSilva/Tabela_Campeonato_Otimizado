@@ -1,3 +1,5 @@
+# Usando a biblioteca pygame mostra gráfico com a evolução da aptidão a cada geração
+# e também ilustra a qualidade da melhor solução da respectiva geração através dos jogos de um único time escolhido aleatoriamente
 
 import pylab
 import matplotlib.pyplot as plt
@@ -11,16 +13,16 @@ from utils_tco import *
 
 matplotlib.use("Agg")
 
-def draw_plot(screen: pygame.Surface, x: list, y: list, x_label: str = 'Generation', y_label: str = 'Fitness') -> None:
+def draw_plot(screen: pygame.Surface, x: list, y: list, x_label: str = 'Geração', y_label: str = 'Fitness') -> None:
     """
-    Draw a plot on a Pygame screen using Matplotlib.
+    Mostra na Tela do Pygame gráfico (Matplotlib) com a evolução da aptidão a cada geração
 
-    Parameters:
-    - screen (pygame.Surface): The Pygame surface to draw the plot on.
-    - x (list): The x-axis values.
-    - y (list): The y-axis values.
-    - x_label (str): Label for the x-axis (default is 'Generation').
-    - y_label (str): Label for the y-axis (default is 'Fitness').
+    Parâmetros:
+        screen (pygame.Surface): A superfície do Pygame para desenhar o gráfico
+        x (list): Valores do eixo X
+        y (list): Valores do eixo Y
+        x_label (str): Rótulo do eixo X
+        y_label (str): Rótulo do eixo Y
 
     @author: SérgioPolimante
     """

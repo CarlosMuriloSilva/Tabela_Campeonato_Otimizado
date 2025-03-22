@@ -1,3 +1,6 @@
+# Calcula a aptidão da Tabela oficial do 1º turno do Campeonato Brasileiro de 2025 da série A
+# Este valor será usado como referência para avaliar os resultados alcançados pelo Algoritimo Genético
+
 from utils_tco import *
 from genetic_algorithm import *
 
